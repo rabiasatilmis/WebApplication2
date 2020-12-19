@@ -1,0 +1,22 @@
+﻿
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" asp-controller="Home" asp-action="Index"> <h1>APP IST</h1></a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <a class="nav-link" asp-controller="Home" asp-action="Index" style="color:white">
+                <h3>
+                    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Anasayfa &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                    <span class="sr-only">(current)</span>
+                </h3>
+            </a>
+            @await Component.InvokeAsync("Menu")
+            <a class="nav-link " asp-controller="Home" asp-action="AboutUs" style="color:white;flex-direction:unset">
+                <h5>Hakkımızda</h5>
+            </a>
+            <a asp-controller="Home" asp-action="Contact" class="nav-link" style="color:white;flex-direction:unset">
+                <h5>İletişim</h5>
+            </a>
+        </div>
+    </nav>
+</header>

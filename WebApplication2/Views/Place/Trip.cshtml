@@ -1,0 +1,45 @@
+﻿@model Place
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="~/css/shop-item.css" rel="stylesheet" />
+</head>
+<body style="background-color:whitesmoke">
+    <!-- Slide Bar -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:1300px;height:650px;margin:auto;margin-top:25px;background-color:whitesmoke">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img style="display:block;margin-left:auto;margin-right:auto;width:1300px;height:650px" src="~/img/@Model.Image">
+            </div>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="post-preview" style="width:900px">
+                    <h2 class="post-title" style="font-weight:800;margin-bottom:20px;font-size:40px;font-family:'Calibri';font-style:oblique;margin-top:65px">
+                        @Model.Name
+                    </h2>
+                    <h3 class="post-subtitle" style="font-weight:500;font-family:'Calibri';font-style:oblique;font-size:20px;text-align:justify">
+                        @Model.Description
+                        <br /> <br /><br />
+                    </h3>
+                </div>
+                <hr />
+                <div class="post-preview" style="width:900px">
+                    <h2 class="post-title" style="font-weight:800;margin-bottom:20px;font-size:30px;font-family:'Calibri';font-style:oblique;margin-top:65px">
+                        @Model.Name Adres
+                    </h2>
+                    <h3 class="post-subtitle" style="font-weight:500;font-family:'Calibri';font-style:oblique;font-size:20px;text-align:justify">
+                        @Model.Address
+                        <br /> <br /><br />
+                    </h3>
+                    <hr />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
